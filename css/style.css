@@ -10,15 +10,15 @@
    Cores, raios e tokens de design
 ========================================= */
 :root {
-  --color-bg: #0d1117;
-  --color-bg-card: #161b22;
-  --color-green: #1f6b2e;
-  --color-green-border: #21262d;
-  --color-green-hover: #1c2128;
-  --color-gold: #d4a843;
-  --color-text: #f0f6fc;
-  --color-text-muted: #8b949e;
-  --color-text-hint: #484f58;
+  --color-bg: #f4f5f0;
+  --color-bg-card: #ffffff;
+  --color-green: #1a6b2f;
+  --color-green-border: #e0e4d8;
+  --color-green-hover: #f0f4eb;
+  --color-gold: #c8981f;
+  --color-text: #1a2318;
+  --color-text-muted: #4a5e42;
+  --color-text-hint: #8a9e82;
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -61,7 +61,7 @@ body {
   height: 88px;
   border-radius: var(--radius-full);
   background-color: var(--color-green);
-  border: 2px solid rgba(212, 168, 67, 0.5);
+  border: 2px solid var(--color-gold);
   margin: 0 auto 16px;
   display: flex;
   align-items: center;
@@ -129,6 +129,7 @@ body {
   color: var(--color-text);
   transition: background-color 0.15s, border-color 0.15s;
   cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .btn-pdf:hover {
@@ -187,6 +188,7 @@ body {
   border: 1px solid var(--color-green-border);
   border-radius: var(--radius-lg);
   padding: 24px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .form-lead__title {
@@ -227,7 +229,7 @@ body {
 .form-lead__select,
 .form-lead__textarea {
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: #f9fafb;
   border: 1px solid var(--color-green-border);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
