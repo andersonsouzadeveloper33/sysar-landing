@@ -1,0 +1,355 @@
+/* 
+    SYSAR Landing Page
+    Arquivo: style.css
+    Propósito: Estilos CSS da landing page SYSAR
+    Identidade visual: Verde vibrante + Dourado sobre fundo escuro
+*/
+
+/* ========================================
+   VARIÁVEIS CSS
+   Cores, raios e tokens de design
+========================================= */
+:root {
+  --color-bg: #0a1a0e;
+  --color-bg-card: #122a18;
+  --color-green: #1b7a2f;
+  --color-green-border: #1e5a2a;
+  --color-green-hover: #163320;
+  --color-gold: #c9a96e;
+  --color-text: #e8f5e9;
+  --color-text-muted: #6abf85;
+  --color-text-hint: #4a8a5e;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 50%;
+}
+
+/* ========================================
+   RESET E BASE
+   Reset CSS e estilos globais
+========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* ========================================
+   HEADER
+   Logo SYSAR, tagline e subtítulo
+========================================= */
+.header {
+  padding: 40px 20px 28px;
+  text-align: center;
+}
+
+.header__container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.logo-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-green);
+  border: 3px solid var(--color-gold);
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle--small {
+  width: 44px;
+  height: 44px;
+  border-width: 2px;
+}
+
+.logo-circle__text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 1px;
+}
+
+.header__tagline {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.header__subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* ========================================
+   SEÇÃO DE PDFs
+   Grid de botões de documentos
+========================================= */
+.section-pdfs {
+  padding: 8px 16px 16px;
+}
+
+.section-pdfs__container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.section-pdfs__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ========================================
+   BOTÕES PDF
+   Links para documentos e materiais
+========================================= */
+.btn-pdf {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-green-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background-color 0.15s, border-color 0.15s;
+  cursor: pointer;
+}
+
+.btn-pdf:hover {
+  background-color: var(--color-green-hover);
+  border-color: var(--color-green);
+}
+
+.btn-pdf__icon {
+  flex-shrink: 0;
+  color: var(--color-gold);
+  width: 36px;
+  height: 36px;
+}
+
+.btn-pdf__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  display: block;
+}
+
+.btn-pdf__subtitle {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+  display: block;
+}
+
+.btn-pdf::after {
+  content: "›";
+  margin-left: auto;
+  font-size: 20px;
+  color: var(--color-green);
+  padding-left: 8px;
+}
+
+/* ========================================
+   SEÇÃO FORMULÁRIO
+   Container do formulário de lead
+========================================= */
+.section-form {
+  padding: 8px 16px 40px;
+}
+
+.section-form__container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   FORMULÁRIO DE LEAD
+   Captação de orçamentos e contatos
+========================================= */
+.form-lead {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-green-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+}
+
+.form-lead__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.form-lead__subtitle {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.form-lead__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.form-lead__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-lead__field--full {
+  grid-column: 1 / -1;
+}
+
+.form-lead__label {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.form-lead__input,
+.form-lead__select,
+.form-lead__textarea {
+  width: 100%;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-green-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 14px;
+  color: var(--color-text);
+  outline: none;
+  font-family: inherit;
+}
+
+.form-lead__input:focus,
+.form-lead__select:focus,
+.form-lead__textarea:focus {
+  border-color: var(--color-green);
+}
+
+.form-lead__input::placeholder,
+.form-lead__textarea::placeholder {
+  color: #2a5a35;
+}
+
+.form-lead__textarea {
+  resize: none;
+}
+
+.form-lead__select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3e%3cpath fill='%236abf85' d='M6 9L1 4h10z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.form-lead__actions {
+  grid-column: 1 / -1;
+}
+
+.form-lead__submit {
+  width: 100%;
+  background-color: var(--color-green);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.15s;
+}
+
+.form-lead__submit:hover {
+  background-color: #22973b;
+}
+
+.form-lead__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-lead__input--error,
+.form-lead__select--error {
+  border-color: #d32f2f;
+}
+
+.form-lead__error {
+  font-size: 11px;
+  color: #ff6b6b;
+  margin-top: 2px;
+}
+
+.form-lead__success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-lead__success p {
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.form-lead__success p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-gold);
+}
+
+/* ========================================
+   FOOTER
+   Logo, copyright e endereço
+========================================= */
+.footer {
+  text-align: center;
+  padding: 24px 16px 32px;
+}
+
+.footer__container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  margin-bottom: 12px;
+}
+
+.footer__copyright {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.footer__address {
+  font-size: 12px;
+  color: var(--color-text-hint);
+}
+
+/* ========================================
+   RESPONSIVO
+   Ajustes para telas menores
+========================================= */
+@media (max-width: 400px) {
+  .form-lead__form {
+    grid-template-columns: 1fr;
+  }
+}
