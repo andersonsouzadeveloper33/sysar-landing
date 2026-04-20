@@ -10,15 +10,15 @@
    Cores, raios e tokens de design
 ========================================= */
 :root {
-  --color-bg: #0a1a0e;
-  --color-bg-card: #122a18;
-  --color-green: #1b7a2f;
-  --color-green-border: #1e5a2a;
-  --color-green-hover: #163320;
-  --color-gold: #c9a96e;
-  --color-text: #e8f5e9;
-  --color-text-muted: #6abf85;
-  --color-text-hint: #4a8a5e;
+  --color-bg: #0d1117;
+  --color-bg-card: #161b22;
+  --color-green: #238636;
+  --color-green-border: #30363d;
+  --color-green-hover: #1c2128;
+  --color-gold: #e6b45a;
+  --color-text: #f0f6fc;
+  --color-text-muted: #8b949e;
+  --color-text-hint: #484f58;
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 14px;
