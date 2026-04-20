@@ -12,10 +12,10 @@
 :root {
   --color-bg: #0d1117;
   --color-bg-card: #161b22;
-  --color-green: #238636;
-  --color-green-border: #30363d;
+  --color-green: #1f6b2e;
+  --color-green-border: #21262d;
   --color-green-hover: #1c2128;
-  --color-gold: #e6b45a;
+  --color-gold: #d4a843;
   --color-text: #f0f6fc;
   --color-text-muted: #8b949e;
   --color-text-hint: #484f58;
@@ -47,12 +47,12 @@ body {
    Logo SYSAR, tagline e subtítulo
 ========================================= */
 .header {
-  padding: 40px 20px 28px;
+  padding: 60px 20px 40px;
   text-align: center;
 }
 
 .header__container {
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@ body {
   height: 88px;
   border-radius: var(--radius-full);
   background-color: var(--color-green);
-  border: 3px solid var(--color-gold);
+  border: 2px solid rgba(212, 168, 67, 0.5);
   margin: 0 auto 16px;
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@ body {
 }
 
 .section-pdfs__container {
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
@@ -174,7 +174,7 @@ body {
 }
 
 .section-form__container {
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .form-lead__submit:hover {
-  background-color: #22973b;
+  background-color: #196025;
 }
 
 .form-lead__submit:disabled {
@@ -325,7 +325,7 @@ body {
 }
 
 .footer__container {
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
