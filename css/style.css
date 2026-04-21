@@ -332,12 +332,16 @@ body {
 }
 
 .header__logo-img {
-  width: 200px;
+  width: 100%;
+  max-width: 280px;
+  min-width: 160px;
   height: auto;
   margin-bottom: 16px;
 }
 
 .footer__logo-img {
-  width: 120px;
+  width: 100%;
+  max-width: 160px;
+  min-width: 100px;
   height: auto;
 }
