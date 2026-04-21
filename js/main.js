@@ -238,6 +238,17 @@ function init() {
   if (form) {
     form.addEventListener('submit', handleFormSubmit);
   }
+  
+  // Toggle do formulário de orçamento
+  const btnOrcamento = document.querySelector('#btnOrcamento');
+  const formOrcamento = document.querySelector('#formOrcamento');
+  if (btnOrcamento && formOrcamento) {
+    btnOrcamento.addEventListener('click', () => {
+      const isHidden = formOrcamento.hidden;
+      formOrcamento.hidden = !isHidden;
+      btnOrcamento.setAttribute('aria-expanded', String(isHidden));
+    });
+  }
 }
 
 // Executa quando o DOM estiver pronto

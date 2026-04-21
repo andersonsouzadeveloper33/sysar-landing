@@ -70,16 +70,6 @@
                         <span class="btn-pdf__subtitle">Especificações e dimensões</span>
                     </a>
 
-                    <!-- Botão: Tabela de valores -->
-                    <a class="btn-pdf" href="#" target="_blank" rel="noopener noreferrer" aria-label="Tabela de valores">
-                        <svg class="btn-pdf__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="8" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <path d="M14 12v5m0 0v5m0-5h6m-6 0h-2m8-5v10m0 0v5m0-5h6m-6 0h-2" stroke="currentColor" stroke-width="1.5"/>
-                        </svg>
-                        <span class="btn-pdf__title">Tabela de valores</span>
-                        <span class="btn-pdf__subtitle">Preços e condições comerciais</span>
-                    </a>
-
                     <!-- Botão: Guia de instalação -->
                     <a class="btn-pdf" href="#" target="_blank" rel="noopener noreferrer" aria-label="Guia de instalação">
                         <svg class="btn-pdf__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,76 +102,41 @@
         ========================================= -->
         <section class="section-form">
             <div class="section-form__container">
-                <div class="form-lead">
+
+                <button class="btn-pdf btn-orcamento" id="btnOrcamento" aria-expanded="false" aria-controls="formOrcamento">
+                    <svg class="btn-pdf__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12h24M8 20h16M8 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="btn-pdf__text">
+                        <span class="btn-pdf__title">Solicitar orçamento</span>
+                        <span class="btn-pdf__subtitle">Preencha e nossa equipe entra em contato</span>
+                    </span>
+                </button>
+
+                <div class="form-lead" id="formOrcamento" hidden>
                     <h2 class="form-lead__title">Solicitar orçamento</h2>
                     <p class="form-lead__subtitle">Preencha abaixo — nossa equipe entra em contato em breve</p>
-                    
                     <form class="form-lead__form" id="leadForm" novalidate>
-                        
-                        <!-- Nome completo -->
                         <div class="form-lead__field">
                             <label for="nome" class="form-lead__label">Nome completo *</label>
-                            <input 
-                                type="text" 
-                                id="nome" 
-                                name="nome" 
-                                class="form-lead__input" 
-                                required 
-                                aria-required="true"
-                            >
+                            <input type="text" id="nome" name="nome" class="form-lead__input" required aria-required="true">
                         </div>
-
-                        <!-- Empresa -->
                         <div class="form-lead__field">
                             <label for="empresa" class="form-lead__label">Empresa</label>
-                            <input 
-                                type="text" 
-                                id="empresa" 
-                                name="empresa" 
-                                class="form-lead__input"
-                            >
+                            <input type="text" id="empresa" name="empresa" class="form-lead__input">
                         </div>
-
-                        <!-- CNPJ -->
                         <div class="form-lead__field">
                             <label for="cnpj" class="form-lead__label">CNPJ</label>
-                            <input 
-                                type="text" 
-                                id="cnpj" 
-                                name="cnpj" 
-                                class="form-lead__input"
-                                placeholder="00.000.000/0000-00"
-                            >
+                            <input type="text" id="cnpj" name="cnpj" class="form-lead__input" placeholder="00.000.000/0000-00">
                         </div>
-
-                        <!-- E-mail -->
                         <div class="form-lead__field">
                             <label for="email" class="form-lead__label">E-mail *</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                class="form-lead__input" 
-                                required 
-                                aria-required="true"
-                            >
+                            <input type="email" id="email" name="email" class="form-lead__input" required aria-required="true">
                         </div>
-
-                        <!-- WhatsApp -->
                         <div class="form-lead__field">
                             <label for="whatsapp" class="form-lead__label">WhatsApp *</label>
-                            <input 
-                                type="tel" 
-                                id="whatsapp" 
-                                name="whatsapp" 
-                                class="form-lead__input" 
-                                placeholder="(00) 00000-0000"
-                                required 
-                                aria-required="true"
-                            >
+                            <input type="tel" id="whatsapp" name="whatsapp" class="form-lead__input" placeholder="(00) 00000-0000" required aria-required="true">
                         </div>
-
-                        <!-- Select: O que você precisa? -->
                         <div class="form-lead__field">
                             <label for="necessidade" class="form-lead__label">O que você precisa?</label>
                             <select id="necessidade" name="necessidade" class="form-lead__select" required>
@@ -195,30 +150,16 @@
                                 <option value="outro">Outro</option>
                             </select>
                         </div>
-
-                        <!-- Textarea: Detalhes -->
                         <div class="form-lead__field form-lead__field--full">
-                            <label for="detalhes" class="form-lead__label">
-                                Qual máquina / modelo / quantidade?
-                            </label>
-                            <textarea 
-                                id="detalhes" 
-                                name="detalhes" 
-                                class="form-lead__textarea" 
-                                rows="4"
-                                placeholder="Ex: Colheitadeira Case 8250, 2 unidades..."
-                            ></textarea>
+                            <label for="detalhes" class="form-lead__label">Qual máquina / modelo / quantidade?</label>
+                            <textarea id="detalhes" name="detalhes" class="form-lead__textarea" rows="4" placeholder="Ex: Colheitadeira Case 8250, 2 unidades..."></textarea>
                         </div>
-
-                        <!-- Botão de envio -->
                         <div class="form-lead__actions">
-                            <button type="submit" class="form-lead__submit">
-                                Enviar solicitação
-                            </button>
+                            <button type="submit" class="form-lead__submit">Enviar solicitação</button>
                         </div>
-
                     </form>
                 </div>
+
             </div>
         </section>
 
