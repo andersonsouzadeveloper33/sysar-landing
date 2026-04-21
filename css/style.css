@@ -10,15 +10,15 @@
    Cores, raios e tokens de design
 ========================================= */
 :root {
-  --color-bg: #f4f5f0;
+  --color-bg: #1a6b2f;
   --color-bg-card: #ffffff;
   --color-green: #1a6b2f;
-  --color-green-border: #e0e4d8;
-  --color-green-hover: #f0f4eb;
-  --color-gold: #c8981f;
-  --color-text: #1a2318;
-  --color-text-muted: #4a5e42;
-  --color-text-hint: #8a9e82;
+  --color-green-border: rgba(255,255,255,0.2);
+  --color-green-hover: #f0f7f2;
+  --color-gold: #f5c518;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255,255,255,0.75);
+  --color-text-hint: rgba(255,255,255,0.5);
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -134,12 +134,12 @@ body {
 
 .btn-pdf:hover {
   background-color: var(--color-green-hover);
-  border-color: var(--color-green);
+  border-color: rgba(255,255,255,0.4);
 }
 
 .btn-pdf__icon {
   flex-shrink: 0;
-  color: var(--color-gold);
+  color: var(--color-green);
   width: 36px;
   height: 36px;
 }
@@ -147,13 +147,13 @@ body {
 .btn-pdf__title {
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-green);
   display: block;
 }
 
 .btn-pdf__subtitle {
   font-size: 12px;
-  color: var(--color-text-muted);
+  color: #4a7a56;
   margin-top: 2px;
   display: block;
 }
@@ -184,8 +184,8 @@ body {
    Captação de orçamentos e contatos
 ========================================= */
 .form-lead {
-  background-color: var(--color-bg-card);
-  border: 1px solid var(--color-green-border);
+  background-color: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: var(--radius-lg);
   padding: 24px 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -194,7 +194,7 @@ body {
 .form-lead__title {
   font-size: 18px;
   font-weight: 500;
-  color: var(--color-text);
+  color: #ffffff;
   margin-bottom: 4px;
 }
 
@@ -229,12 +229,12 @@ body {
 .form-lead__select,
 .form-lead__textarea {
   width: 100%;
-  background-color: #f9fafb;
-  border: 1px solid var(--color-green-border);
+  background-color: rgba(255,255,255,0.95);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
   font-size: 14px;
-  color: var(--color-text);
+  color: #1a2318;
   outline: none;
   font-family: inherit;
 }
@@ -269,20 +269,20 @@ body {
 
 .form-lead__submit {
   width: 100%;
-  background-color: var(--color-green);
+  background-color: var(--color-gold);
   border: none;
   border-radius: var(--radius-sm);
   padding: 14px;
   font-size: 15px;
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: 600;
+  color: var(--color-green);
   cursor: pointer;
   font-family: inherit;
   transition: background-color 0.15s;
 }
 
 .form-lead__submit:hover {
-  background-color: #196025;
+  background-color: #e6b800;
 }
 
 .form-lead__submit:disabled {
