@@ -56,38 +56,6 @@ body {
   margin: 0 auto;
 }
 
-.logo-circle {
-  width: 88px;
-  height: 88px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-green);
-  border: 2px solid var(--color-gold);
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-circle--small {
-  width: 44px;
-  height: 44px;
-  border-width: 2px;
-}
-
-.logo-circle__text {
-  font-size: 15px;
-  font-weight: 600;
-  color: #ffffff;
-  letter-spacing: 1px;
-}
-
-.header__tagline {
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: 8px;
-}
-
 .header__subtitle {
   font-size: 14px;
   color: var(--color-text-muted);
@@ -361,4 +329,17 @@ body {
   text-align: left;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-green-border);
+}
+
+.header__logo-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.footer__logo-img {
+  width: 120px;
+  height: auto;
+  filter: brightness(0) invert(1);
 }
