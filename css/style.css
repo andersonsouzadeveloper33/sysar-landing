@@ -335,11 +335,9 @@ body {
   width: 200px;
   height: auto;
   margin-bottom: 16px;
-  filter: brightness(0) invert(1);
 }
 
 .footer__logo-img {
   width: 120px;
   height: auto;
-  filter: brightness(0) invert(1);
 }
