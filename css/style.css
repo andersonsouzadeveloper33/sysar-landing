@@ -47,13 +47,15 @@ body {
    Logo SYSAR, tagline e subtítulo
 ========================================= */
 .header {
-  padding: 60px 20px 40px;
+  padding: 56px 20px 36px;
   text-align: center;
 }
 
 .header__container {
-  max-width: 560px;
+  max-width: 680px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .header__subtitle {
@@ -71,14 +73,16 @@ body {
 }
 
 .section-pdfs__container {
-  max-width: 560px;
+  max-width: 680px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .section-pdfs__grid {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 /* ========================================
@@ -88,15 +92,17 @@ body {
 .btn-pdf {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: var(--radius-md);
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-green-border);
-  border-radius: var(--radius-md);
-  padding: 14px 16px;
   text-decoration: none;
   color: var(--color-text);
   transition: background-color 0.15s, border-color 0.15s;
   cursor: pointer;
+  width: 100%;
+  text-align: left;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
@@ -108,22 +114,24 @@ body {
 .btn-pdf__icon {
   flex-shrink: 0;
   color: var(--color-green);
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
 }
 
 .btn-pdf__title {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--color-green);
   display: block;
+  white-space: nowrap;
 }
 
 .btn-pdf__subtitle {
-  font-size: 12px;
+  font-size: 13px;
   color: #4a7a56;
   margin-top: 2px;
   display: block;
+  white-space: nowrap;
 }
 
 .btn-pdf::after {
@@ -143,8 +151,10 @@ body {
 }
 
 .section-form__container {
-  max-width: 560px;
+  max-width: 680px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* ========================================
@@ -295,8 +305,10 @@ body {
 }
 
 .footer__container {
-  max-width: 560px;
+  max-width: 680px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .footer__logo {
@@ -324,6 +336,26 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .header__logo-img {
+    width: 75%;
+  }
+
+  .btn-pdf__title,
+  .btn-pdf__subtitle {
+    white-space: normal;
+  }
+
+  .btn-pdf {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .form-lead__form {
+    grid-template-columns: 1fr;
+  }
+}
+
 .btn-pdf--full {
   width: 100%;
   text-align: left;
@@ -332,11 +364,11 @@ body {
 }
 
 .header__logo-img {
-  width: 100%;
-  max-width: 280px;
-  min-width: 160px;
+  width: 60%;
+  max-width: 320px;
+  min-width: 180px;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .footer__logo-img {
