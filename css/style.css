@@ -69,7 +69,7 @@ body {
    Grid de botões de documentos
 ========================================= */
 .section-pdfs {
-  padding: 8px 8px 16px;
+  padding: 8px 4px 16px;
 }
 
 .section-pdfs__container {
@@ -145,7 +145,7 @@ body {
    Container do formulário de lead
 ========================================= */
 .section-form {
-  padding: 8px 8px 40px;
+  padding: 8px 4px 40px;
 }
 
 .section-form__container {
