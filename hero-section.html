@@ -111,70 +111,33 @@
         .text-section .highlight-green {
             color: #1a6b2f;
         }
+
+        .hero-img {
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a8a3a;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        
-        <!-- Header com logo SYSAR -->
-        <header class="header">
-            <img src="assets/sysar_logo_branca.png" alt="SYSAR Logo">
-        </header>
-
-        <!-- Seção Hero com marca d'água e ventilador -->
-        <section class="hero-section">
-            <!-- Marca d'água SVG - Símbolo S em linhas concêntricas -->
-            <div class="watermark">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Linhas curvas concêntricas formando o S -->
-                    <path d="M 60 50 Q 100 30, 140 50 Q 150 60, 140 70 Q 100 90, 60 70 Q 50 60, 60 50" 
-                          fill="none" 
-                          stroke="#2a9a4a" 
-                          stroke-width="3"/>
-                    <path d="M 140 90 Q 100 110, 60 90 Q 50 80, 60 70 Q 100 50, 140 70 Q 150 80, 140 90" 
-                          fill="none" 
-                          stroke="#2a9a4a" 
-                          stroke-width="3"/>
-                    <path d="M 50 45 Q 100 20, 150 45 Q 165 60, 150 75 Q 100 100, 50 75 Q 35 60, 50 45" 
-                          fill="none" 
-                          stroke="#2a9a4a" 
-                          stroke-width="2" 
-                          opacity="0.7"/>
-                    <path d="M 150 95 Q 100 120, 50 95 Q 35 80, 50 65 Q 100 40, 150 65 Q 165 80, 150 95" 
-                          fill="none" 
-                          stroke="#2a9a4a" 
-                          stroke-width="2" 
-                          opacity="0.7"/>
-                    <path d="M 40 40 Q 100 10, 160 40 Q 180 60, 160 80 Q 100 110, 40 80 Q 20 60, 40 40" 
-                          fill="none" 
-                          stroke="#2a9a4a" 
-                          stroke-width="1.5" 
-                          opacity="0.5"/>
-                    <path d="M 160 100 Q 100 130, 40 100 Q 20 80, 40 60 Q 100 30, 160 60 Q 180 80, 160 100" 
-                          fill="none" 
-                          stroke="#2a9a4a" 
-                          stroke-width="1.5" 
-                          opacity="0.5"/>
-                </svg>
-            </div>
-            
-            <!-- Foto do ventilador -->
-            <img src="assets/ventilador.png" alt="Ventilador SYSAR" class="hero-image">
-        </section>
-
-        <!-- Triângulo amarelo sobreposto -->
-        <div class="triangle-section"></div>
-
-        <!-- Seção de texto com slogan -->
-        <section class="text-section">
-            <p>
-                Seu trabalho pesado<br>
-                <span class="highlight">revertido</span><br>
-                em uma solução<br>
-                <span class="highlight-green">automática.</span>
-            </p>
-        </section>
-
-    </div>
+    <main>
+        <img 
+            src="assets/hero-sysar.jpg" 
+            alt="SYSAR - Seu trabalho pesado revertido em uma solução automática" 
+            class="hero-img"
+        >
+    </main>
 </body>
 </html>
