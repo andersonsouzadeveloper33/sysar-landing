@@ -42,6 +42,13 @@ body {
   line-height: 1.6;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
 /* ========================================
    HEADER
    Logo SYSAR, tagline e subtítulo
