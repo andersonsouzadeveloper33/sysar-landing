@@ -107,6 +107,7 @@ textarea {
   width: 100%;
   text-align: left;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  font-family: inherit;
 }
 
 .btn-pdf:hover {
@@ -253,7 +254,7 @@ textarea {
   font-weight: 600;
   color: var(--color-green);
   cursor: pointer;
-  font-family: inherit;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
   transition: background-color 0.15s;
 }
 
@@ -352,6 +353,7 @@ textarea {
   text-align: left;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-green-border);
+  font-family: inherit;
 }
 
 .header__logo-img {
