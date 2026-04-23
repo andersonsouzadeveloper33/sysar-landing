@@ -3,141 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYSAR - Seu trabalho pesado revertido em uma solução automática</title>
-    
-    <!-- Google Fonts - Sora -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS próprio -->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <title>SYSAR - Apresentação</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Sora', sans-serif;
-            overflow-x: hidden;
-        }
-
-        /* Container principal mobile-first */
-        .container {
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #1a6b2f; }
+        .page {
+            width: 100%;
             max-width: 480px;
             margin: 0 auto;
-            position: relative;
-        }
-
-        /* Header - Logo centralizada com fundo verde */
-        .header {
-            background-color: #1a8a3a;
-            padding: 32px;
-            text-align: center;
-        }
-
-        .header img {
-            max-width: 200px;
-            height: auto;
-        }
-
-        /* Seção Hero - Fundo verde com marca d'água e ventilador */
-        .hero-section {
-            background-color: #1a8a3a;
-            height: 55vh;
-            position: relative;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            flex-direction: column;
         }
-
-        /* Marca d'água SVG - Símbolo S em linhas concêntricas */
-        .watermark {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            height: 80%;
-            opacity: 0.3;
-            z-index: 1;
-        }
-
-        .watermark svg {
+        .page img {
             width: 100%;
-            height: 100%;
-        }
-
-        /* Foto do ventilador centralizada com sombra */
-        .hero-image {
-            position: relative;
-            z-index: 2;
-            max-width: 70%;
-            height: auto;
-            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
-        }
-
-        /* Triângulo amarelo sobreposto */
-        .triangle-section {
-            background-color: #f5c518;
-            height: 120px;
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-            margin-top: -1px;
-        }
-
-        /* Seção de texto - Fundo amarelo */
-        .text-section {
-            background-color: #f5c518;
-            padding: 24px 32px 48px;
-            text-align: center;
-        }
-
-        .text-section p {
-            font-size: 28px;
-            font-weight: bold;
-            line-height: 1.3;
-            color: white;
-        }
-
-        .text-section .highlight {
-            color: #1a6b2f;
-            font-style: italic;
-        }
-
-        .text-section .highlight-green {
-            color: #1a6b2f;
-        }
-
-        .hero-img {
-            width: 100%;
-            max-width: 480px;
             height: auto;
             display: block;
-            margin: 0 auto;
         }
-
-        .header {
-            display: none;
+        .cta {
+            background: #f5c518;
+            padding: 32px 24px;
+            text-align: center;
         }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background: #1a8a3a;
+        .cta a {
+            display: inline-block;
+            background: #1a6b2f;
+            color: #ffffff;
+            font-family: 'Sora', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <img 
-            src="assets/hero-sysar.jpg" 
-            alt="SYSAR - Seu trabalho pesado revertido em uma solução automática" 
-            class="hero-img"
-        >
-    </main>
+    <div class="page">
+        <img src="assets/hero-sysar.jpg" alt="SYSAR - Seu trabalho pesado revertido em uma solução automática">
+        <img src="assets/secao-nacional.jpg" alt="Hélice reversível, tecnologia 100% nacional">
+        <img src="assets/secao-campo.jpg" alt="SYSAR em ação e reversão">
+        <div class="cta">
+            <a href="index.html#formOrcamento">Solicitar orçamento</a>
+        </div>
+    </div>
 </body>
 </html>
