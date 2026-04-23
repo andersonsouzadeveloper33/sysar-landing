@@ -38,7 +38,7 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
 }
 
@@ -93,7 +93,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 18px 20px;
+  padding: 16px 20px;
   border-radius: var(--radius-md);
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-green-border);
@@ -103,7 +103,7 @@ body {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
 .btn-pdf:hover {
@@ -114,24 +114,22 @@ body {
 .btn-pdf__icon {
   flex-shrink: 0;
   color: var(--color-green);
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 .btn-pdf__title {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--color-green);
   display: block;
-  white-space: nowrap;
 }
 
 .btn-pdf__subtitle {
-  font-size: 13px;
+  font-size: 12px;
   color: #4a7a56;
   margin-top: 2px;
   display: block;
-  white-space: nowrap;
 }
 
 .btn-pdf::after {
@@ -171,7 +169,7 @@ body {
 
 .form-lead__title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 4px;
 }
