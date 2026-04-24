@@ -316,6 +316,24 @@ textarea {
 .footer__address {
   font-size: 12px;
   color: var(--color-text-hint);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.footer__contact {
+  font-size: 12px;
+  color: var(--color-text-hint);
+  line-height: 1.6;
+}
+
+.footer__contact a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer__contact a:hover {
+  color: var(--color-gold);
 }
 
 .footer__social {
