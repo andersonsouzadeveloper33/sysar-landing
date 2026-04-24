@@ -151,6 +151,16 @@ function validateForm(form) {
     isValid = false;
   }
   
+  // Valida campo "Outro" se estiver visível
+  const outroDetalhes = form.querySelector('#outroDetalhes');
+  if (necessidade.value === 'outro' && outroDetalhes) {
+    const outroDetalhesField = outroDetalhes.closest('.form-lead__field');
+    if (!outroDetalhes.value.trim()) {
+      showError(outroDetalhesField, 'Especifique sua necessidade');
+      isValid = false;
+    }
+  }
+  
   return isValid;
 }
 
@@ -247,6 +257,25 @@ function init() {
       const isHidden = formOrcamento.hidden;
       formOrcamento.hidden = !isHidden;
       btnOrcamento.setAttribute('aria-expanded', String(isHidden));
+    });
+  }
+  
+  // Mostra/esconde campo "Outro" baseado na seleção
+  const necessidadeSelect = document.querySelector('#necessidade');
+  const outroField = document.querySelector('#outroField');
+  const outroDetalhesInput = document.querySelector('#outroDetalhes');
+  
+  if (necessidadeSelect && outroField && outroDetalhesInput) {
+    necessidadeSelect.addEventListener('change', () => {
+      if (necessidadeSelect.value === 'outro') {
+        outroField.style.display = 'block';
+        outroDetalhesInput.required = true;
+      } else {
+        outroField.style.display = 'none';
+        outroDetalhesInput.required = false;
+        outroDetalhesInput.value = '';
+        clearError(outroDetalhesInput);
+      }
     });
   }
 }
