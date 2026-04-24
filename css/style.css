@@ -351,9 +351,19 @@ textarea {
 .btn-pdf--full {
   width: 100%;
   text-align: left;
-  background-color: var(--color-bg-card);
-  border: 1px solid var(--color-green-border);
+  background-color: var(--color-green);
+  border: 1px solid var(--color-green);
   font-family: inherit;
+  color: #ffffff;
+}
+
+.btn-pdf--full:hover {
+  background-color: #01664a;
+  border-color: #01664a;
+}
+
+.btn-pdf--full .btn-pdf__icon {
+  color: #ffffff;
 }
 
 .header__logo-img {
