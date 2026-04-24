@@ -15,24 +15,49 @@
 ========================================= */
 
 /**
+ * Aplica máscara de CPF: 000.000.000-00
+ * @param {string} value - Valor do input
+ * @returns {string} - Valor formatado
+ */
+function maskCPF(value) {
+  const numbers = value.replace(/\D/g, '').slice(0, 11);
+  if (numbers.length === 0) return '';
+  if (numbers.length <= 3) return numbers;
+  if (numbers.length <= 6) return `${numbers.slice(0,3)}.${numbers.slice(3)}`;
+  if (numbers.length <= 9) return `${numbers.slice(0,3)}.${numbers.slice(3,6)}.${numbers.slice(6)}`;
+  return `${numbers.slice(0,3)}.${numbers.slice(3,6)}.${numbers.slice(6,9)}-${numbers.slice(9)}`;
+}
+
+/**
  * Aplica máscara de CNPJ: 00.000.000/0000-00
  * @param {string} value - Valor do input
  * @returns {string} - Valor formatado
  */
 function maskCNPJ(value) {
+  const numbers = value.replace(/\D/g, '').slice(0, 14);
+  if (numbers.length === 0) return '';
+  if (numbers.length <= 2) return numbers;
+  if (numbers.length <= 5) return `${numbers.slice(0,2)}.${numbers.slice(2)}`;
+  if (numbers.length <= 8) return `${numbers.slice(0,2)}.${numbers.slice(2,5)}.${numbers.slice(5)}`;
+  if (numbers.length <= 12) return `${numbers.slice(0,2)}.${numbers.slice(2,5)}.${numbers.slice(5,8)}/${numbers.slice(8)}`;
+  return `${numbers.slice(0,2)}.${numbers.slice(2,5)}.${numbers.slice(5,8)}/${numbers.slice(8,12)}-${numbers.slice(12)}`;
+}
+
+/**
+ * Aplica máscara de CPF ou CNPJ automaticamente
+ * @param {string} value - Valor do input
+ * @returns {string} - Valor formatado
+ */
+function maskCPFCNPJ(value) {
   const numbers = value.replace(/\D/g, '');
-  const match = numbers.match(/^(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
   
-  if (!match) return value;
+  // Até 11 dígitos: máscara de CPF
+  if (numbers.length <= 11) {
+    return maskCPF(value);
+  }
   
-  let formatted = '';
-  if (match[1]) formatted += match[1];
-  if (match[2]) formatted += '.' + match[2];
-  if (match[3]) formatted += '.' + match[3];
-  if (match[4]) formatted += '/' + match[4];
-  if (match[5]) formatted += '-' + match[5];
-  
-  return formatted;
+  // Acima de 11 dígitos: máscara de CNPJ
+  return maskCNPJ(value);
 }
 
 /**
@@ -219,11 +244,11 @@ function showSuccessMessage(form) {
  * Inicializa todos os event listeners da página
  */
 function init() {
-  // Máscara de CNPJ
+  // Máscara de CPF/CNPJ
   const cnpjInput = document.querySelector('#cnpj');
   if (cnpjInput) {
     cnpjInput.addEventListener('input', (e) => {
-      e.target.value = maskCNPJ(e.target.value);
+      e.target.value = maskCPFCNPJ(e.target.value);
     });
   }
   
