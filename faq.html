@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#028758">
+    <title>Perguntas Frequentes - SYSAR</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { background: #028758; font-family: 'Sora', sans-serif; }
+        .page { width: 100%; max-width: 480px; margin: 0 auto; }
+        .nav-top {
+            background: #028758;
+            padding: 20px 24px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        .back-link {
+            display: inline-block;
+            background: #ffffff;
+            color: #028758;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .back-link:hover { background: #f0f0f0; }
+        .faq-header {
+            padding: 32px 24px 16px;
+            text-align: center;
+        }
+        .faq-header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .faq-header p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.75);
+        }
+        .faq-category {
+            padding: 16px 16px 4px;
+        }
+        .faq-category__title {
+            font-size: 11px;
+            font-weight: 600;
+            color: #f5c518;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 0 4px 8px;
+        }
+        .faq-item {
+            background: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 16px 20px;
+            text-align: left;
+            font-family: 'Sora', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #028758;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .faq-question:hover { background: #f5faf7; }
+        .faq-icon {
+            font-size: 18px;
+            color: #028758;
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-answer {
+            display: none;
+            padding: 0 20px 16px;
+            font-size: 13px;
+            color: #3a5a45;
+            line-height: 1.7;
+            border-top: 1px solid #e8f5ee;
+            padding-top: 12px;
+        }
+        .faq-item.open .faq-answer { display: block; }
+        .cta {
+            background: #028758;
+            padding: 24px;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .cta a {
+            display: inline-block;
+            background: #ffffff;
+            color: #028758;
+            font-family: 'Sora', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .cta a:hover { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="nav-top">
+        <a href="index.html" class="back-link">← Voltar ao menu</a>
+    </div>
+
+    <div class="faq-header">
+        <h1>Perguntas Frequentes</h1>
+        <p>Tire suas dúvidas sobre o SYSAR</p>
+    </div>
+
+    <!-- FUNCIONAMENTO E TECNOLOGIA -->
+    <div class="faq-category">
+        <div class="faq-category__title">⚙️ Funcionamento e Tecnologia</div>
+        <div class="faq-item"><button class="faq-question">O sistema de acionamento do SYSAR é hidráulico ou pneumático? <span class="faq-icon">+</span></button><div class="faq-answer">O acionamento do SYSAR é pneumático, utilizando o ar comprimido do próprio equipamento para realizar a reversão do fluxo de ar.</div></div>
+        <div class="faq-item"><button class="faq-question">Como o ventilador SYSAR funciona? <span class="faq-icon">+</span></button><div class="faq-answer">O ventilador trabalha no sentido normal de refrigeração e, em intervalos programados, realiza a reversão automática do fluxo de ar, expulsando sujeira e detritos acumulados no radiador.</div></div>
+        <div class="faq-item"><button class="faq-question">A reversão é automática ou manual? <span class="faq-icon">+</span></button><div class="faq-answer">Pode ser automática ou manual, dependendo da configuração escolhida. A versão automática é a mais utilizada, pois não depende do operador.</div></div>
+        <div class="faq-item"><button class="faq-question">O SYSAR funciona com o equipamento em operação? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. A reversão ocorre com o equipamento em funcionamento, sem necessidade de parada.</div></div>
+    </div>
+
+    <!-- EFICIÊNCIA E DESEMPENHO -->
+    <div class="faq-category">
+        <div class="faq-category__title">🌡️ Eficiência e Desempenho</div>
+        <div class="faq-item"><button class="faq-question">É necessário parar a máquina para limpar o radiador? <span class="faq-icon">+</span></button><div class="faq-answer">Não. O SYSAR elimina a necessidade de paradas para limpeza, pois realiza a limpeza automaticamente durante a operação.</div></div>
+        <div class="faq-item"><button class="faq-question">O SYSAR realmente evita superaquecimento? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. Ao manter o radiador limpo continuamente, o sistema evita obstrução do fluxo de ar, que é a principal causa de aquecimento.</div></div>
+        <div class="faq-item"><button class="faq-question">O ar-condicionado melhora com o SYSAR? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. Com o radiador limpo, o sistema de arrefecimento trabalha corretamente, refletindo diretamente na eficiência do ar-condicionado.</div></div>
+        <div class="faq-item"><button class="faq-question">O sistema reduz consumo de combustível? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. Com o sistema de arrefecimento operando corretamente, o motor trabalha em condições ideais, podendo reduzir o consumo de combustível.</div></div>
+    </div>
+
+    <!-- INSTALAÇÃO E ADAPTAÇÃO -->
+    <div class="faq-category">
+        <div class="faq-category__title">🔩 Instalação e Adaptação</div>
+        <div class="faq-item"><button class="faq-question">A instalação do SYSAR é difícil? <span class="faq-icon">+</span></button><div class="faq-answer">Não. A instalação é simples e pode ser realizada por mecânicos ou equipe técnica, seguindo o manual fornecido.</div></div>
+        <div class="faq-item"><button class="faq-question">O produto possui manual de instalação? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. O SYSAR acompanha manual técnico completo com orientações detalhadas.</div></div>
+        <div class="faq-item"><button class="faq-question">Preciso adaptar ou modificar o equipamento? <span class="faq-icon">+</span></button><div class="faq-answer">Na maioria dos casos, não. O sistema é desenvolvido para adaptação ao conjunto original, respeitando as características do equipamento.</div></div>
+        <div class="faq-item"><button class="faq-question">O SYSAR é compatível com qualquer máquina? <span class="faq-icon">+</span></button><div class="faq-answer">Sim, desde que seja especificado corretamente. Cada modelo é dimensionado conforme marca e modelo do equipamento.</div></div>
+        <div class="faq-item"><button class="faq-question">Por que a ligação deve ser feita no pós-ignição? <span class="faq-icon">+</span></button><div class="faq-answer">Para garantir que o sistema funcione somente com o equipamento ligado, evitando acionamentos indevidos e protegendo o sistema elétrico.</div></div>
+    </div>
+
+    <!-- OPERAÇÃO E CONTROLE -->
+    <div class="faq-category">
+        <div class="faq-category__title">🔄 Operação e Controle</div>
+        <div class="faq-item"><button class="faq-question">O operador precisa acionar o sistema? <span class="faq-icon">+</span></button><div class="faq-answer">Não necessariamente. No modo automático, o sistema opera sozinho.</div></div>
+        <div class="faq-item"><button class="faq-question">É possível ajustar o tempo de reversão? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. O intervalo de reversão pode ser configurado conforme a aplicação e o nível de sujeira do ambiente.</div></div>
+        <div class="faq-item"><button class="faq-question">O sistema faz muito ruído na reversão? <span class="faq-icon">+</span></button><div class="faq-answer">Não. O ruído é momentâneo e dentro dos padrões normais de operação.</div></div>
+    </div>
+
+    <!-- MANUTENÇÃO E DURABILIDADE -->
+    <div class="faq-category">
+        <div class="faq-category__title">🛠️ Manutenção e Durabilidade</div>
+        <div class="faq-item"><button class="faq-question">O SYSAR exige manutenção frequente? <span class="faq-icon">+</span></button><div class="faq-answer">Não. O sistema é robusto e projetado para baixa manutenção.</div></div>
+        <div class="faq-item"><button class="faq-question">Qual a vida útil do produto? <span class="faq-icon">+</span></button><div class="faq-answer">Alta. O SYSAR é desenvolvido com materiais resistentes para uso severo em campo.</div></div>
+        <div class="faq-item"><button class="faq-question">O sistema pode danificar o radiador? <span class="faq-icon">+</span></button><div class="faq-answer">Não. A reversão é projetada para limpar sem causar danos ao radiador.</div></div>
+    </div>
+
+    <!-- COMERCIAL E APLICAÇÃO -->
+    <div class="faq-category">
+        <div class="faq-category__title">💼 Comercial e Aplicação</div>
+        <div class="faq-item"><button class="faq-question">Como saber qual modelo de SYSAR utilizar? <span class="faq-icon">+</span></button><div class="faq-answer">É necessário informar marca, modelo do equipamento e, em alguns casos, diâmetro do ventilador original.</div></div>
+        <div class="faq-item"><button class="faq-question">O SYSAR é um produto nacional? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. É um produto 100% nacional, desenvolvido para as condições reais do Brasil.</div></div>
+        <div class="faq-item"><button class="faq-question">Existe pronta entrega? <span class="faq-icon">+</span></button><div class="faq-answer">Depende do modelo. Como o produto é aplicado conforme o equipamento, pode haver prazo de fabricação.</div></div>
+        <div class="faq-item"><button class="faq-question">O SYSAR pode ser instalado em tratores, colheitadeiras e linha amarela? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. O sistema é aplicado em tratores, colhedoras de cana, colheitadeiras de grãos, caminhões, escavadeiras e outros equipamentos.</div></div>
+    </div>
+
+    <!-- RESULTADOS E BENEFÍCIOS -->
+    <div class="faq-category">
+        <div class="faq-category__title">📈 Resultados e Benefícios</div>
+        <div class="faq-item"><button class="faq-question">Qual o principal benefício do SYSAR? <span class="faq-icon">+</span></button><div class="faq-answer">Eliminar paradas para limpeza e evitar superaquecimento.</div></div>
+        <div class="faq-item"><button class="faq-question">O SYSAR gera economia? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. Reduz custos com parada, manutenção, combustível e aumenta a produtividade.</div></div>
+        <div class="faq-item"><button class="faq-question">O investimento vale a pena? <span class="faq-icon">+</span></button><div class="faq-answer">Sim. O retorno ocorre através da redução de custos operacionais e aumento de eficiência.</div></div>
+    </div>
+
+    <div class="cta">
+        <a href="index.html">← Voltar ao menu</a>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            item.classList.toggle('open');
+        });
+    });
+</script>
+</body>
+</html>
