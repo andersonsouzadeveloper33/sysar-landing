@@ -1,0 +1,21 @@
+{
+  "name": "SYSAR - Radiador limpo. Sempre. Automático.",
+  "short_name": "SYSAR",
+  "description": "Ventilador com fluxo de ar reversível. Tecnologia nacional patenteada.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#028758",
+  "theme_color": "#028758",
+  "icons": [
+    {
+      "src": "assets/apple-touch-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
